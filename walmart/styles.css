@@ -1,0 +1,704 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Featured Products Heading */
+main h1 {
+    color: #0046be; /* Heading color */
+    font-size: 36px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+/* Underline Effect */
+main h1::after {
+    content: ''; /* Empty content for the underline effect */
+    display: block; /* Block display for the underline */
+    width: 80px; /* Width of the underline */
+    height: 5px; /* Thickness of the underline */
+    background-color: #ffc220; /* Color of the underline */
+    margin: 10px auto; /* Center the underline and add margin */
+    border-radius: 5px; /* Rounded corners for the underline */
+}
+/* Main Content Styles */
+.main-content {
+    padding: 50px 20px; /* Ensure padding matches the index.html */
+}
+
+.main-content h1 {
+    color: #0046be; /* Adjust to match heading color in index.html */
+
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff; /* Background color matching the index.html */
+    padding: 15px; /* Padding inside the product card */
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Border below the image */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.rating i {
+    color: #ff9800; /* Star color */
+    font-size: 18px;
+}
+
+.empty-star {
+    color: #ddd; /* Color for empty stars */
+}
+
+.review {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.add-to-cart-btn {
+    background-color: #0046be; /* Button color matching index.html */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0033a0; /* Hover effect matching index.html */
+}
+
+a {
+    text-decoration: none;
+    color: #0046be;
+}
+
+a:hover {
+    color: #0033a0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0046be;
+    color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 60px;
+    border-radius: 10px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-container a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-container a:hover {
+    background-color: #ffc220;
+    color: #0046be;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#menu-toggle:hover {
+    color: #ffc220;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 250px;
+    transition: border-color 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #0046be;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #ffc220;
+    border: none;
+    color: #0046be;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #f9b200;
+    color: #fff;
+}
+
+.account-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.account-options a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.account-options a:hover {
+    color: #ffc220;
+}
+
+/* Customizing "Sign In" Button */
+.sign-in-btn {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #ffc220;
+    color: #0046be;
+}
+
+/* Customizing "Add to Cart" Button */
+.add-to-cart-btn {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffc220;
+}
+
+/* Product Categories */
+.product-category {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.product-category h2 {
+    color: #0046be;
+    border-bottom: 3px solid #ffc220;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px; /* Increased padding around the content */
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%; /* Adjusted to fit container with padding */
+    height: 200px; /* Adjusted height */
+    object-fit: cover; /* Ensures image covers the container */
+    object-position: center; /* Centers the image within the container */
+    margin: 0; /* No margin needed */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #0046be;
+    font-size: 18px;
+}
+
+.product-card p {
+    margin: 0;
+    color: #ffc220;
+    font-size: 16px;
+}
+
+
+
+/* Product Detail Page Styles */
+/* Limited Time Offers Section */
+.limited-time-offers {
+    padding: 50px 20px;
+    background-color: #fff; /* Set background color to white */
+}
+
+.limited-time-offers h2 {
+    color: #0046be;
+    border-bottom: 3px solid #ffc220;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.limited-time-offers .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.limited-time-offers .offer-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.limited-time-offers .offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.limited-time-offers .offer-card img {
+    width: 100%;
+    height: 180px; /* Adjusted height for consistency */
+    object-fit: cover;
+}
+
+.limited-time-offers .offer-card h3 {
+    margin: 10px 0;
+    color: #0046be;
+    font-size: 18px;
+}
+
+.limited-time-offers .offer-card p {
+    margin: 0;
+    color: #ffc220;
+    font-size: 16px;
+}
+
+.limited-time-offers .offer-card .deal-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e60023;
+    margin: 10px 0;
+}
+
+.limited-time-offers .offer-card .original-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #666;
+}
+/* Filters Section Styles */
+.filters-section {
+    background-color: #f9f9f9; /* Background color for the filters section */
+    padding: 20px; /* Padding around the filters section */
+    margin-bottom: 40px; /* Space below the filters section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.filters-section h2 {
+    font-size: 1.5rem; /* Font size for the section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Heading color */
+    text-align: flex-start; /* Center align the heading */
+}
+
+.filters {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Center align items */
+}
+
+.filters label {
+    font-size: 1rem; /* Font size for the label */
+    margin-bottom: 10px; /* Space below the label */
+    color: #666; /* Label color */
+}
+
+.filters select {
+    font-size: 1rem; /* Font size for the select dropdown */
+    padding: 10px; /* Padding inside the dropdown */
+    border: 1px solid #ccc; /* Border color for the dropdown */
+    border-radius: 4px; /* Rounded corners for the dropdown */
+    width: 100%; /* Full width for the dropdown */
+    max-width: 300px; /* Maximum width for the dropdown */
+    margin-bottom: 10px; /* Space below the dropdown */
+}
+
+.filters select:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Deals Page Styles */
+.deal-section {
+    padding: 50px 20px;
+    background-color: #fff; /* Ensure background color is consistent */
+}
+
+.deal-section h2 {
+    color: #0046be;
+    border-bottom: 3px solid #ffc220;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; /* Align header to the left */
+}
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.deal-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.deal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.deal-card h3 {
+    margin: 10px 0;
+    color: #0046be;
+    font-size: 18px;
+}
+
+.deal-card p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.deal-card .original-price {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+.deal-card .discounted-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e60023;
+}
+
+.add-to-cart-btn {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ffc220;
+}
+
+/* Footer Styles */
+.footer-container {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray text */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #0066cc; /* Blue links */
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eaeaea; /* Slightly darker gray for the bottom section */
+    color: #333;
+}
+
+
+
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 360px;
+    max-height: 500px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: none; /* Initially hidden; toggled by JavaScript */
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #0046be;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.chatbot-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.chatbot-header button:hover {
+    color: #ffc220;
+}
+
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    align-self: flex-end;
+    border-radius: 20px 20px 0 20px;
+}
+
+.bot-message {
+    background-color: #e8f5e9;
+    align-self: flex-start;
+    border-radius: 20px 20px 20px 0;
+}
+
+.chatbot-input-container {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 12px;
+}
+
+#send-btn {
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #ffc220;
+}
+
+/* Chatbot Toggle Button */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0046be;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#chatbot-toggle:hover {
+    background-color: #ffc220;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0046be;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-container a {
+        padding: 15px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav-container a:last-child {
+        border-bottom: none;
+    }
+    
+}

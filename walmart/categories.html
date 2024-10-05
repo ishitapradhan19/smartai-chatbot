@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Walmart Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header-container">
+        <img src="https://www.dropbox.com/scl/fi/ytcmius301jwjp3fyx4x4/logo.png?rlkey=zn5mk28mqn2npy6to0gstmjn1&st=wod6bc9b&dl=1" alt="Walmart Logo" class="logo">
+        <nav class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories.html">Categories</a>
+            <a href="deals.html">Deals</a>
+            <a href="#">Help</a>
+            <button id="menu-toggle">☰</button>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search products...">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="account-options">
+            <a href="#">Sign In</a>
+            <a href="#">Add To Cart</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1>Product Categories</h1>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <h2>Filter Products</h2>
+            <div class="filters">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="price-low-high">Price: Low to High</option>
+                    <option value="price-high-low">Price: High to Low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section class="product-category">
+            <h2>Outdoor Gear</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/ve6gmeaa5x5lv77n4vtt6/download-23.jpg?rlkey=p37x1bujty3b2w7mjypu575zh&st=fdldep2g&dl=1" alt="Tent">
+                    <h3>Tent</h3>
+                    <p>$120.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/unutu5atb3qv6ag6zerqr/download-24.jpg?rlkey=i0jzip34ks4yaa1t3bxy9abs9&st=0bsx5lb8&dl=1" alt="Camping Stove">
+                    <h3>Camping Stove</h3>
+                    <p>$60.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/jjsdrhat4gngc51bt0pk4/download-25.jpg?rlkey=98s4vwifs6ciawtgupur5uza8&st=u6xa9nmg&dl=1" alt="Sleeping Bag">
+                    <h3>Sleeping Bag</h3>
+                    <p>$80.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/wmadrlxv5c1x1mcdugfsb/download-26.jpg?rlkey=okt5usswabau1w5oxii6kgwvl&st=hts1xd7y&dl=1" alt="Backpack">
+                    <h3>Backpack</h3>
+                    <p>$90.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/mms219r301sp0twbr4oft/download-27.jpg?rlkey=k3hruksdrs0ywhbjmiamlt386&st=8vp6vl6a&dl=1" alt="Hiking Boots">
+                    <h3>Hiking Boots</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Beauty Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/3nhk3kzzbc424q9b7duxg/download-28.jpg?rlkey=gbxnimjo3imr4ccbqg9eqizt9&st=l5gk14tb&dl=1" alt="Lipstick">
+                    <h3>Lipstick</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/4hph7gelot6v6hax9dg2x/download-29.jpg?rlkey=z42q1wmoc7gtawyxui9cfkf2h&st=wupj33w3&dl=1" alt="Foundation">
+                    <h3>Foundation</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/nbibx6ornxurrq3ic5wni/download-30.jpg?rlkey=sjricun1tdzdjb0lv57lsvrqa&st=82bqih1a&dl=1" alt="Perfume">
+                    <h3>Perfume</h3>
+                    <p>$75.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/nlq0du4xztjxms7ogot63/download-31.jpg?rlkey=ji7zmhvn7kbmaeqgx30n2zomw&st=qhjv34js&dl=1" alt="Skincare Set">
+                    <h3>Skincare Set</h3>
+                    <p>$120.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/b6jt148sp3u6pgqd4smpi/download-32.jpg?rlkey=snv1ce2g8l2vfqus7f00g9zlk&st=1hlblntr&dl=1" alt="Hair Dryer">
+                    <h3>Hair Dryer</h3>
+                    <p>$45.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Sports Equipment</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="basketball.html">
+                        <img src="https://www.dropbox.com/scl/fi/xg2k1ybdbazbn6awcgdi7/download-33.jpg?rlkey=gpi2p5xgbxjthba2u6zc7e10k&st=hhnqu549&dl=1" alt="Basketball">
+                        <h3>Basketball</h3>
+                        <p>$30.00</p>
+                    </a>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/2g96gk56ix2gco83xicsi/download-34.jpg?rlkey=0g1zvcfp61fll5y9dpjlyx8bz&st=wxoxll58&dl=1" alt="Tennis Racket">
+                    <h3>Tennis Racket</h3>
+                    <p>$75.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/9lz5eagrrsm6xwhgksue6/download-35.jpg?rlkey=3w345nwutn9p12n7nouu057dx&st=j5w8lytr&dl=1" alt="Yoga Mat">
+                    <h3>Yoga Mat</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/eplzlc0njebjlcbq0oyaj/download-36.jpg?rlkey=m0h02zabgrrkwv0kyjkcwisus&st=7sbxxfvd&dl=1" alt="Dumbbells">
+                    <h3>Dumbbells</h3>
+                    <p>$50.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/8x9bxyflh43i1qoxqmo6y/download-37.jpg?rlkey=g2zengwo4a9wwcw1eg9jihr4l&st=9hxp5r2i&dl=1" alt="Football">
+                    <h3>Football</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-category">
+            <h2>Books</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/vtq5yj4v2nfzaep7sw75z/download-39.jpg?rlkey=g8dokn2eja8fhn7uisourxdb2&st=ks0jd9u4&dl=1" alt="Novel">
+                    <h3>Novel</h3>
+                    <p>$15.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/7cpm69ojk0irh7kdumt6h/download-38.jpg?rlkey=z4v4322ns6a87rhgz998ytzdi&st=wkrva9jd&dl=1" alt="Cookbook">
+                    <h3>Cookbook</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/jzzbg96nlffpdp6wz510l/download-40.jpg?rlkey=xozpyrfhw9wfcjgpkviubfkvj&st=ckjzz2jx&dl=1" alt="Science Fiction">
+                    <h3>Science Fiction</h3>
+                    <p>$18.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/afzlxy19d1wr3dv14nmet/download-41.jpg?rlkey=gs6wauvfjnfiixvp2uxx0ym1k&st=7lknqaq2&dl=1" alt="Biography">
+                    <h3>Biography</h3>
+                    <p>$22.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://www.dropbox.com/scl/fi/b8gxwtmskmy8f9c0cljic/download-42.jpg?rlkey=bi2n0hztcvk8tnhbj3a7kx6kf&st=hpfzs2i9&dl=1" alt="Children's Book">
+                    <h3>Children's Book</h3>
+                    <p>$12.00</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+ <!-- Footer -->
+ <footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Corporate Responsibility</a></li>
+                <li><a href="#">Investor Relations</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">CA Supply Chain Act</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Walmart Inc. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <span>Chat with us!</span>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="message bot-message">Hello! How can I assist you today?</div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <button id="chatbot-toggle">💬</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
